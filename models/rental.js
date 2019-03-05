@@ -3,19 +3,21 @@ module.exports = function(sequelize, DataTypes) {
     model: DataTypes.STRING,
     make: DataTypes.STRING,
     color: DataTypes.STRING,
-    plate_number: DataTypes.STRING,
+    plateNumber: DataTypes.STRING,
     year: DataTypes.INTEGER,
     cleaned: DataTypes.BOOLEAN,
-    full_tank: DataTypes.BOOLEAN,
-    pic_url: DataTypes.STRING
+    fullTank: DataTypes.BOOLEAN,
+    picUrl: DataTypes.STRING
+
   });
 
   var customer = sequelize.define("customer", {
-    customer_name: DataTypes.STRING,
+    customerName: DataTypes.STRING,
     DOB: DataTypes.DATE,
-    preferred_veh: DataTypes.STRING,
-    rental_period: DataTypes.INTEGER,
+    preferredVeh: DataTypes.STRING,
+    rentalPeriod: DataTypes.INTEGER,
     renting: DataTypes.BOOLEAN
+        // add drivers license number
   });
 
   

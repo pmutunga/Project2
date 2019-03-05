@@ -8,21 +8,22 @@ CREATE TABLE vehicles (
     model VARCHAR(255) NOT NULL,
     make VARCHAR(255) NOT NULL,
     color VARCHAR(255) NOT NULL,
-    plate_number VARCHAR(255) NOT NULL,
-    vehicle_year INT,
+    plateNumber VARCHAR(255) NOT NULL,
+    vehicleYear INT,
     cleaned BOOLEAN DEFAULT FALSE,
-    full_tank BOOLEAN DEFAULT FALSE,
-    pic_url VARCHAR(255) NOT NULL,
+    fullTank BOOLEAN DEFAULT FALSE,
+    picUrl VARCHAR(255) NOT NULL,
     PRIMARY KEY (id)
 );
 
 CREATE TABLE customers (
-    customer_name VARCHAR(255) NOT NULL,
+    customerName VARCHAR(255) NOT NULL,
     DOB DATE, --date of birth
     preferred_veh VARCHAR(255), --model only
-    rental_period INT, --in days
+    rentalPeriod INT, --in days
     renting BOOLEAN DEFAULT FALSE
+    -- add drivers license number
 )
 
-INSERT INTO vehicles (model, make, color, plate_number, vehicle_year, cleaned, full_tank, pic_url) 
+INSERT INTO vehicles (model, make, color, plateNumber, vehicleYear, cleaned, fullTank, picUrl) 
 VAULES ("", "", "", "", , FALSE, FALSE, "");
