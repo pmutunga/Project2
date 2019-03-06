@@ -17,9 +17,7 @@ if (config.use_env_variable) {
     config.password,
     config
   );
-}
-
-fs.readdirSync(__dirname)
+}s.readdirSync(__dirname)
   .filter(function(file) {
     return (
       file.indexOf(".") !== 0 && file !== basename && file.slice(-3) === ".js"
