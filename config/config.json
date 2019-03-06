@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "Coding123",
-    "database": "rental_db",
+    "database": "rentaldb",
     "host": "localhost",
     "dialect": "mysql"
   },
